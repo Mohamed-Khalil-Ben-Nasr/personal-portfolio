@@ -29,7 +29,30 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import ai from "./ai.png";
+import python from "./python.png";
+import java from "./java.png";
+import tensorflow from "./tensorflow.png";
+import pytorch from "./pytorch.png";
+import kotlin from "./kotlin.png";
+import mysql from "./mysql.png";
+import smartTransportHub from "./smartTransportHub.png";
+import hackHarvard from "./hackHarvard.png";
+import lawrence from "./lawrence.png";
+import beta from "./beta.png";
+import gymbroai from "./gymbroai.png";
+import skinGuardian from "./skinGuardian.png";
+import horizon from "./horizon.png"
 
+/*
+ ai,
+  python,
+  java,
+  tensorflow,
+  pytorch,
+  kotlin,
+  mysql
+*/
 export {
   logo,
   backend,
@@ -59,4 +82,18 @@ export {
   carrent,
   jobit,
   tripguide,
+  ai,
+  python,
+  java,
+  tensorflow,
+  pytorch,
+  kotlin,
+  mysql,
+  smartTransportHub,
+  hackHarvard,
+  lawrence,
+  beta,
+  skinGuardian,
+  gymbroai,
+  horizon
 };
