@@ -52,9 +52,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-      I'm a passionate software developer and aspiring AI researcher with a strong background in computer science and data science. 
-      My mission is to leverage artificial intelligence to make a meaningful impact in healthcare and empower those in need. 
-      With experience in developing advanced deep learning models like "SkinGuardian" for early skin cancer detection, 
+      I'm a passionate software developer with a strong background in computer science, full-stack development, AI, and AWS Cloud technologies. 
+      My mission is to leverage my technical skills to make a meaningful impact in healthcare and empower those in need. 
       I aim to create innovative solutions that improve lives and foster hope. Let's collaborate to turn transformative ideas into reality!
       </motion.p>
 

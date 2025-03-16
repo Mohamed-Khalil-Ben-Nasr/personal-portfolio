@@ -74,6 +74,8 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p>This form may not work, so I would appreciate it if you can contact me via:</p>
+        <h1>mohamedkhalil.bennasr@lawrence.edu</h1>
 
         <form
           ref={formRef}

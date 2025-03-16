@@ -43,6 +43,12 @@ import beta from "./beta.png";
 import gymbroai from "./gymbroai.png";
 import skinGuardian from "./skinGuardian.png";
 import horizon from "./horizon.png"
+import aws_cloud_icon from "./aws_cloud_icon.png"
+import vite from "./vite.png"
+import shadcnui from "./shadcnui.png"
+import github_icon from "./github_icon.png"
+import springboot from "./springboot.png"
+import docker_icon from "./docker_icon.png"
 
 /*
  ai,
@@ -95,5 +101,11 @@ export {
   beta,
   skinGuardian,
   gymbroai,
-  horizon
+  horizon,
+  aws_cloud_icon,
+  vite,
+  shadcnui,
+  github_icon,
+  springboot,
+  docker_icon
 };

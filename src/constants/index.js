@@ -36,7 +36,13 @@ import {
   beta,
   skinGuardian,
   gymbroai,
-  horizon
+  horizon,
+  aws_cloud_icon,
+  vite,
+  shadcnui,
+  github_icon,
+  springboot,
+  docker_icon
 } from "../assets";
 
 export const navLinks = [
@@ -67,29 +73,13 @@ const services = [
     title: "Full Stack Developer",
     icon: backend,
   },
+  {
+    title: "Cloud Developer",
+    icon: aws_cloud_icon,
+  },
 ];
 
 const technologies = [
-  {
-    name: 'TensorFlow',
-    icon: tensorflow,
-  },
-  {
-    name: 'Pytorch',
-    icon: pytorch,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
   {
     name: "TypeScript",
     icon: typescript,
@@ -99,28 +89,40 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Vite",
+    icon: vite,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Shadcn UI",
+    icon: shadcnui,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "Kotlin",
-    icon: kotlin,
+    name: 'SpringBoot',
+    icon: springboot,
   },
   {
     name: 'mySQL',
     icon: mysql,
   },
   {
-    name: "git",
-    icon: git,
+    name: 'Pytorch',
+    icon: pytorch,
+  },
+  {
+    name: "Github",
+    icon: github_icon,
+  },
+  {
+    name: "Docker",
+    icon: docker_icon,
+  },
+  {
+    name: "AWS",
+    icon: aws_cloud_icon,
   }
 ];
 
@@ -185,54 +187,37 @@ const experiences = [
       'Will leverage fine-tuned large language models (e.g., ChatGPT) with Retrieval-Augmented Generation (RAG) to generate accurate and up-to-date clinical diagnoses and descriptions, minimizing hallucinations and ensuring reliability.'
     ],
   },
+  {
+    title: 'Full-Stack Cloud Developer',
+    company_name: 'Capstone- SkinGuardian - LU CS department',
+    icon: skinGuardian,
+    iconBg: '#E6DEDD',
+    date: 'September 2024 - Present',
+    points: [
+      `Developed a multimodal deep learning model that fuses visual features from ResNet50 with clinical metadata via a custom clinical feature extractor with embedding layers and neural network-based fusion layer.`,
+      `Achieved 90% test accuracy and weighted F1 score on HAM10000, outperforming baseline single-modality models`,
+      `Deployed the model as an AWS SageMaker inference endpoint for real-time skin lesion classification.`,
+      `Built a Spring Boot API deployed on an EC2 instance in a public subnet, secured with JWT-based authentication (with public login/signup endpoints).`,
+      `Implemented a CI/CD pipeline for the backend using GitHub Actions and Docker. A GitHub workflow script automatically builds the application, creates a Docker image, pushes it to Docker Hub, and deploys it to EC2, ensuring seamless updates and consistency.`,
+      `Integrated with an AWS RDS MySQL database (in a private subnet) for application data and an S3 bucket for storing skin lesion images.`,
+      `Developed a responsive front end using React, Vite, and TypeScript with Shadcn UI for styling.`,
+      `Deployed the website using AWS Amplify, which is linked to a GitHub repository and manages CI/CD automatically.`,
+      `Configured a custom domain in Route 53 that points to the ALB, which terminates SSL using an ACM certificate and forwards secure traffic to the backend in the specified EC2 instance target group.`,
+      `Deployed AWS WAF to protect against common web vulnerabilities, ensuring only legitimate traffic reaches the ALB. `,
+      `Configured security groups so that the EC2 instance only accepts traffic from the ALB, and the RDS instance (in a private subnet) only accepts connections from the EC2 instance’s security group. `,
+      `Utilized Spring Security to enforce JWT authentication across secure endpoints.`,
+    ],
+  },
 ];
 
 const projects = [
   {
     name: 'SkinGuardian',
     description:
-      'An advanced skin lesion classification system utilizing multimodal deep learning for early detection and clinical diagnosis and report generation, aiming to make healthcare more accessible.',
+      'This is my SkinGuardian production-version deployed on AWS Ampify for public use.',
     tags: [
       {
-        name: 'Pytorch',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'AI Research',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Capstone',
-        color: 'pink-text-gradient',
-      }
-    ],
-    image: skinGuardian,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Horizon Banking',
-    description:
-      'A modern banking platform featuring a finance management dashboard, real-time transactions, and user-to-user money transfers within the platform.',
-    tags: [
-      {
-        name: 'Full Stack Dev',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Banking',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: horizon,
-    source_code_link: 'https://github.com/Mohamed-Khalil-Ben-Nasr/Horizon-Banking',
-  },
-  {
-    name: 'GymBro AI',
-    description:
-      'An AI-powered personalized fitness coach developed during HackHarvard 2023, focusing on user-friendly interface and tailored fitness plans.',
-    tags: [
-      {
-        name: 'React',
+        name: 'Full-Stack',
         color: 'blue-text-gradient',
       },
       {
@@ -240,12 +225,88 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'HackHarvard',
+        name: 'Cloud',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'Production',
+        color: 'purple-text-gradient',
+      }
     ],
-    image: gymbroai,
-    source_code_link: 'https://github.com/Mohamed-Khalil-Ben-Nasr/GymBro-AI',
+    image: skinGuardian,
+    source_code_link: 'https://main.d374fmb5qt34h7.amplifyapp.com/',
+  },
+  {
+    name: 'SkinGuardian Front-End',
+    description:
+      'This is my SkinGuardian front-end developed using React, Vite, Typescript, and Shadcn UI for styling. The front-end is deployed on AWS Amplify, which is linked to the github repo and manages CI/CD automatically.',
+    tags: [
+      {
+        name: 'Front-End',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Cloud',
+        color: 'pink-text-gradient',
+      }
+    ],
+    image: skinGuardian,
+    source_code_link: 'https://github.com/Mohamed-Khalil-Ben-Nasr/SkinGuardian-Front-End',
+  },
+  {
+    name: 'SkinGuardian Back-End',
+    description:
+      'I built a Spring Boot API deployed on an EC2 instance in a public subnet, secured with JWT-based authentication (with public login/signup endpoints). Implemented a CI/CD pipeline for the backend using GitHub Actions and Docker. A GitHub workflow script automatically builds the application, creates a Docker image, pushes it to Docker Hub, and deploys it to EC2, ensuring seamless updates and consistency. Integrated with an AWS RDS MySQL database (in a private subnet) for application data and an S3 bucket for storing skin lesion images.',
+    tags: [
+      {
+        name: 'Back-End',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Cloud',
+        color: 'pink-text-gradient',
+      }
+    ],
+    image: skinGuardian,
+    source_code_link: 'https://github.com/Mohamed-Khalil-Ben-Nasr/SkinGuardian-Back-End',
+  },
+  {
+    name: 'SkinGuardian AI Model',
+    description:
+      'This is my SkinGuardian AI model. I Developed a multimodal deep learning model that fuses visual features from ResNet50 with clinical metadata via a custom clinical feature extractor with embedding layers and neural network-based fusion layer. My model Achieved 90% test accuracy and weighted F1 score on HAM10000, outperforming baseline single-modality models. I also Deployed the model as an AWS SageMaker inference endpoint for real-time skin lesion classification',
+    tags: [
+      {
+        name: 'AI',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Cloud',
+        color: 'pink-text-gradient',
+      }
+    ],
+    image: skinGuardian,
+    source_code_link: 'https://github.com/Mohamed-Khalil-Ben-Nasr/SkinGuardian-AI-Model',
+  },
+  {
+    name: 'SkinGuardian Documentation',
+    description:
+      'This is my SkinGuardian documentation repo. It contains documentation for all of SkinGuardian, along with architecture diagrams.',
+    tags: [
+      {
+        name: 'Documentation',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'AI',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Cloud',
+        color: 'pink-text-gradient',
+      }
+    ],
+    image: skinGuardian,
+    source_code_link: 'https://github.com/Mohamed-Khalil-Ben-Nasr/SkinGuardian-Docs',
   },
 ];
 
