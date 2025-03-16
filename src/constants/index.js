@@ -139,6 +139,28 @@ const experiences = [
     ],
   },
   {
+    title: 'Class of 2025 Class Representative',
+    company_name: 'Lawrence University Community Council (LUCC)',
+    icon: lawrence,
+    iconBg: '#383E56',
+    date: 'September 2022 - June 2023',
+    points: [
+      'Served as a voting member of the LUCC General Council, legislating on a wide variety of non-curricular issues and allocating funds from a yearly budget of approximately $350,000.',
+      'Facilitated communication between university administration and a 1600+ member student body, ensuring student concerns and needs were effectively represented.',
+    ],
+  },
+  {
+    title: 'Member',
+    company_name: 'Lawrence University President’s Student Advisory Committee',
+    icon: lawrence,
+    iconBg: '#E6DEDD',
+    date: 'September 2022 - June 2023',
+    points: [
+      'Appointed by the University President to serve as a liaison between students and administration, providing direct input on student-centered policies and university initiatives.',
+      'Engaged in high-level discussions to advocate for student needs and propose innovative solutions to enhance the university experience.',
+    ],
+  },
+  {
     title: 'Hackathon Participant',
     company_name: 'HackHarvard 2023',
     icon: hackHarvard,
@@ -169,8 +191,9 @@ const experiences = [
     date: 'September 2024 - Present',
     points: [
       'Managed a $30,000 annual budget to optimize chapter operations and events.',
-      'Organized fundraisers and philanthropy events, raising over $1,000 for charity.',
+      'Organized fundraisers and philanthropy events, raising over $3,000 for charity.',
       'Recruited 15 new members in one term, doubling the size and diversity of the chapter.',
+      'Enhanced brotherhood and member engagement by organizing retreats and fostering a strong community, which increased the fraternity s visibility and reputation on campus.'
     ],
   },
   {
